@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager
 type: Documentatie
@@ -10,7 +10,7 @@ user-guide-description: De uitbreiding van de Veiligheid van het Document voor M
 feature: Documentbeveiliging
 role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: f441620b5463ffa0c038f76e1b92c4e3a56d23b2
+source-git-commit: 7be2b17e7685a391dcccde2cc008802b5773cadf
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
