@@ -7,12 +7,11 @@ audience: end-user
 user-guide-title: Adobe Experience Manager Document Security Guide
 breadcrumb-title: Documentbeveiligingsgids
 user-guide-description: De uitbreiding van de Veiligheid van het Document voor Microsoft® Office zorgt ervoor dat slechts de mensen u toelaat Word, Excel, en de dossiers van PowerPoint kunnen gebruiken die uw intellectuele bezit bevatten.
-feature: Document Security
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 7be2b17e7685a391dcccde2cc008802b5773cadf
+feature: Documentbeveiliging
+role: User
+source-git-commit: 30aa9eea28832fba634fb7710c0cc0666a9f3b7e
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
