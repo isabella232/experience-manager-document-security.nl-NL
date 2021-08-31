@@ -5,18 +5,17 @@ uuid: db4abbc8-eb21-4f4a-9950-224ada95ce66
 content-type: reference
 topic-tags: using
 discoiquuid: f4c2460c-174f-4e4d-b804-1eb051d2781e
-translation-type: tm+mt
-source-git-commit: 21288f7f1c8f786d3c4c363986226038bdb03e26
+exl-id: 667a9718-b865-4911-96c2-7c08f75e0732
+source-git-commit: 13c487b13acb0d65f02301c881bfade512428bcd
 workflow-type: tm+mt
-source-wordcount: '6270'
+source-wordcount: '6252'
 ht-degree: 0%
 
 ---
 
+# De Extensie van de Veiligheid van het AEM van het Document gebruiken voor Microsoft Office{#using-aem-document-security-extension-for-microsoft-office}
 
-# Het gebruiken van de Uitbreiding van de Veiligheid van het AEM van het Document voor Microsoft Office{#using-aem-document-security-extension-for-microsoft-office}
-
-## Protect-bestanden die gebruikmaken van AEM Document Security Extension {#usingaemdocumentsecurityextensiontoprotectfiles}
+## Protect-bestanden met AEM Document Security Extension {#usingaemdocumentsecurityextensiontoprotectfiles}
 
 U kunt controleren hoe de ontvangers uw beleid-beschermde dossiers gebruiken, ongeacht hoe wijd u hen verspreidt.
 
@@ -30,7 +29,7 @@ Met Documentbeveiligingsextensie voor Microsoft Office kunt u de volgende taken 
 * Open de webpagina&#39;s Documentbeveiliging om de toegang tot bestanden in te trekken of om het beleid voor het bestand te wijzigen
 * Open de webpagina&#39;s Documentbeveiliging om de auditgeschiedenis van het bestand weer te geven
 
-### Verbinding maken met een Document Security-server {#connect-to-a-document-security-server}
+### Verbinding maken met een documentbeveiligingsserver {#connect-to-a-document-security-server}
 
 Als u beleid wilt toepassen op bestanden, moet u de verbindingsinstellingen configureren voor Documentbeveiliging. Afhankelijk van hoe de Uitbreiding van de Veiligheid van het Document voor Microsoft Office werd geïnstalleerd, kunt u reeds standaardverbindingsmontages hebben. U kunt verbindingsinstellingen toevoegen voor een of meer instanties van Documentbeveiliging. U kunt serverinformatie opvragen bij de documentbeveiligingsbeheerder.
 
@@ -40,7 +39,7 @@ Als op de documentbeveiligingsserver verificatie op basis van certificaten wordt
 
 Nadat u de verbindingsmontages voor een geval van de Veiligheid van het Document in één toepassing van Microsoft Office vormt, wordt het gevormd voor elk van Word, Excel, en PowerPoint.
 
-#### Certificaat {#install-the-client-side-certificate} op de client installeren
+#### Het clientcertificaat installeren {#install-the-client-side-certificate}
 
 Als u toegang moet krijgen tot de webpagina&#39;s voor documentbeveiliging via certificaatverificatie of tweezijdige verificatie, ontvangt u het certificaat dat u op uw lokale computer moet installeren. U ontvangt een certificaatbestand (.PFX- of .P12-bestand) en het bijbehorende wachtwoord.
 
@@ -51,7 +50,7 @@ Als u toegang moet krijgen tot de webpagina&#39;s voor documentbeveiliging via c
 1. Selecteer Alle certificaten in de volgende winkel plaatsen in het dialoogvenster Certificaatarchief en klik op **Bladeren**.
 1. Selecteer Persoonlijk in het dialoogvenster Certificaatarchief selecteren, klik op **OK**, klik op **Volgende** en klik vervolgens op **Voltooien**.
 
-#### Verbindingsinstellingen {#configure-connection-settings} configureren
+#### Verbindingsinstellingen configureren {#configure-connection-settings}
 
 1. In de Uitbreiding van de Veiligheid van het Document voor Microsoft Office 2010 en Bureau 2013, op **de Veiligheid van het Document** tabel, uitgezocht **Kies Server**.
 1. Klik **Nieuw** om nieuwe verbindingsmontages tot stand te brengen, of selecteer een bestaande verbinding en klik **uitgeven**.
@@ -79,7 +78,7 @@ Als u toegang moet krijgen tot de webpagina&#39;s voor documentbeveiliging via c
 >
 >Als u geen verbinding kunt maken met Documentbeveiliging, wordt een bericht weergegeven met de melding dat de gebruikersnaam en het wachtwoord onjuist zijn. Controleer de configuratie-instellingen en probeer het opnieuw. Dit bericht wordt mogelijk weergegeven als u om een andere reden geen verbinding kunt maken. Als u voor het eerst verbinding maakt met de server, controleert u of u de servernaam en poort correct hebt ingesteld.
 
-#### De standaardserver {#specify-the-default-server} opgeven
+#### De standaardserver opgeven {#specify-the-default-server}
 
 1. Ga als volgt te werk:
 
@@ -87,7 +86,7 @@ Als u toegang moet krijgen tot de webpagina&#39;s voor documentbeveiliging via c
 
 1. Selecteer een server die u als standaard wilt opgeven en klik op **Standaard instellen**. Er wordt een sterretje weergegeven naast de standaardserver.
 
-### Andere verificatieproviders {#using-third-party-authentication-providers} gebruiken
+### Het gebruiken van de leveranciers van de authentificatie van de Derden {#using-third-party-authentication-providers}
 
 U kunt externe verificatieproviders gebruiken met AEM Forms Document Security. Met deze verificatieproviders kunt u een extra toegangslaag toevoegen aan de beveiligde documenten. AEM Forms-documentbeveiliging ondersteunt de volgende uitgebreide verificatieworkflows:
 
@@ -143,7 +142,7 @@ Voer de volgende stappen uit om uitgebreide verificatie met een aangepaste landi
 
    Nu is de beveiliging van AEM Forms-documenten geconfigureerd voor uitgebreide verificatie met een aangepaste bestemmings-URL
 
-#### Standaard uitgebreide verificatieworkflow met externe identiteitsproviders geconfigureerd op AEM Forms-server {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
+#### Standaard uitgebreide verificatieworkflow met externe identiteitsproviders geconfigureerd op de AEM Forms-server {#default-extended-authentication-workflow-with-third-party-identity-providers-configured-on-aem-forms-server}
 
 Voor uitgebreide verificatie kunnen verschillende typen verificatie worden gebruikt die beschikbaar zijn op de AEM Forms-server. Bijvoorbeeld SAML, [Wat zijn meer voorbeelden].
 
@@ -151,7 +150,7 @@ Opmerking: Als de leveranciers van SAML op de server van AEM Forms worden gevorm
 
 Het volgende scherm wordt weergegeven wanneer een beveiligd document wordt geopend in Acrobat.
 
-#### Aangepaste uitgebreide verificatieworkflow wanneer SAML-providers worden geconfigureerd op de AEM Forms-server {#custom-extended-authentication-workflow-when-saml-providers-are-configured-on-aem-forms-server}
+#### Aangepaste uitgebreide verificatieworkflow wanneer SAML-providers zijn geconfigureerd op de AEM Forms-server {#custom-extended-authentication-workflow-when-saml-providers-are-configured-on-aem-forms-server}
 
 Als de leveranciers van SAML op de server van AEM Forms worden gevormd, dan alvorens het landen URL te tonen, wordt een pagina getoond die alle identiteitsleveranciers bevat die voor de authentificatie van SAML worden gevormd.
 
@@ -172,7 +171,7 @@ U kunt ook een aangepaste pagina weergeven met alle verificatieproviders die op 
 
    Nu, wordt de documentveiligheid van AEM Forms gevormd om een douanepagina te tonen die alle gevormde authentificatieleveranciers bevat.
 
-### Een gebruikersaccount {#obtaining-a-user-account} verkrijgen
+### Een gebruikersaccount aanvragen {#obtaining-a-user-account}
 
 Als u nog geen account voor documentbeveiliging hebt, kan Documentbeveiliging het registratieproces starten wanneer deze gebeurtenissen zich voordoen:
 
@@ -324,7 +323,7 @@ Sommige beleidsinstellingen die beschikbaar zijn voor het maken van beleid op de
 
 Voor meer informatie over het creëren van en het beheren van beleid, zie [de Eind - Gebruiker van de Veiligheid van het Document Hulp](http://help.adobe.com/en_US/AEMForms/6.1/RMHelp/).
 
-### Beleid {#applying-policies} toepassen
+### Beleid toepassen {#applying-policies}
 
 U kunt elk beschikbaar beleid toepassen op een bestand, inclusief het beleid dat u hebt gemaakt en het beleid dat deel uitmaakt van een beleidsset waartoe u toegang hebt. Voordat u een beleid toepast, moet u het bestand opslaan.
 
@@ -342,7 +341,7 @@ U kunt beleid slechts op het documentdossiers van Word (.doc, ook.docx en .docm 
 1. Selecteer een beleid in de lijst en klik op **Toepassen**.
 1. Sla het bestand op.
 
-#### Pas een onlangs gebruikt beleid {#apply-a-recently-used-policy} toe
+#### Pas een onlangs gebruikt beleid toe {#apply-a-recently-used-policy}
 
 1. In de Uitbreiding van de Veiligheid van het Document voor Microsoft Office 2010 en 2013, op **de Veiligheid van het Document** tabel, uitgezochte **Veilig > ***[Beleidsnaam]*.
 1. Sla het bestand op.
@@ -366,7 +365,7 @@ Als u de Extensie-gesteunde toepassingen van het Bureau van de Veiligheid van he
 
 Als een functie niet beschikbaar is, zijn de opdrachtnaam in het menu en de bijbehorende werkbalkknop niet beschikbaar. Als u in Documentbeveiligingsextensie voor Microsoft Office de muisaanwijzer boven de opdracht of knop houdt, geeft knopinfo aan dat de opdracht niet beschikbaar is in Documentbeveiliging.
 
-### Met beleid beveiligde bestanden openen {#opening-policy-protected-files}
+### Beleidsbeveiligde bestanden openen {#opening-policy-protected-files}
 
 U kunt met beleid beveiligde bestanden openen met dezelfde methoden als voor het openen van andere bestanden. Als u zich nog niet hebt aangemeld bij Documentbeveiliging, wordt u gevraagd dit te doen, tenzij u geen verbinding hebt met internet en u het bestand offline kunt openen. Als u het aanmeldingsproces annuleert, wordt de toegang geweigerd.
 
@@ -380,7 +379,7 @@ Afhankelijk van de verificatiemethode die is geïmplementeerd op Documentbeveili
 
 De gebruikerservaring bij het openen van beveiligde bestanden is afhankelijk van de wederzijdse verificatieconfiguratie op de server. Als slechts één geldig clientcertificaat is geïnstalleerd, wordt er geen verificatiedialoogvenster weergegeven en worden de bestanden geopend. Als er echter meerdere clientcertificaten op een computer zijn geïnstalleerd, wordt er een dialoogvenster voor verificatie weergegeven. De gebruiker moet een geldig certificaat kiezen om het beveiligde bestand te openen.
 
-### Beleidsbescherming verwijderen uit een bestand {#removing-policy-protection-from-a-file}
+### Beleidsbescherming uit een bestand verwijderen {#removing-policy-protection-from-a-file}
 
 Als u dit toestaat, kunt u de beleidsbeveiliging verwijderen uit bestanden die u hebt beveiligd. Als u dit doet, wordt het bestand niet meer beveiligd door Documentbeveiliging.
 
@@ -391,7 +390,7 @@ Als u dit toestaat, kunt u de beleidsbeveiliging verwijderen uit bestanden die u
 >[!NOTE]
 Als u geen beleid kunt verwijderen uit een bestand dat u hebt beveiligd, neemt u contact op met de beheerder van documentbeveiliging.
 
-### Beveiligingsinstellingen {#viewing-security-settings} weergeven
+### Beveiligingsinstellingen weergeven {#viewing-security-settings}
 
 U kunt de machtigingen weergeven die u hebt voor het huidige bestand voor afdrukken, kopiëren, wijzigen en offline openen, en de geldigheidsperiode van het bestand.
 
@@ -401,11 +400,11 @@ Ga als volgt te werk:
 
 * In de Uitbreiding van de Veiligheid van het Document voor Microsoft Office 2010 en 2013, op **het lusje van de Veiligheid van het Document**, in **de Groep van de Status van de Veiligheid**, klik om het even welk punt.
 
-### Documenten opslaan wanneer automatisch toepassen van beleid is ingeschakeld {#saving-documents-when-auto-apply-policy-is-enabled}
+### Documenten opslaan wanneer Beleid automatisch toepassen is ingeschakeld {#saving-documents-when-auto-apply-policy-is-enabled}
 
 Als de beheerder de functie voor automatisch toepassen heeft ingeschakeld, wordt elk document dat u maakt of bewerkt automatisch beveiligd wanneer u het document opslaat.
 
-Als Auto-apply beleid wordt toegelaten, zal de Uitbreiding van de Veiligheid van het Document voor Microsoft Office u ertoe aanzetten om aan te melden bij de server van de Veiligheid van het Document. U moet uw gebruikersnaam en wachtwoord opgeven om door de server te worden geverifieerd. Als u de juiste aanmeldingsgegevens hebt opgegeven, wordt het document opgeslagen en beveiligd.
+Als Auto-apply beleid wordt toegelaten, zal de Uitbreiding van de Veiligheid van het Document voor Microsoft Office u ertoe aanzetten om aan login aan de server van de Veiligheid van het Document. U moet uw gebruikersnaam en wachtwoord opgeven om door de server te worden geverifieerd. Als u de juiste aanmeldingsgegevens hebt opgegeven, wordt het document opgeslagen en beveiligd.
 
 >[!NOTE]
 Als u zich niet kunt aanmelden bij Documentbeveiliging, wordt het document mogelijk wel of niet opgeslagen. Dit hangt van af hoe uw Beheerder het Auto-apply beleid heeft gevormd. Vraag de beheerder hoe documenten in deze situatie worden verwerkt.
@@ -479,7 +478,7 @@ U kunt de Web-pagina&#39;s van de Veiligheid van het Document openen om uw gebru
 
 Om de Web-pagina&#39;s van de Veiligheid van het Document, in de Uitbreiding van de Veiligheid van het Document voor Microsoft Office 2010 en 2013, op **de Veiligheid van het Document** tabel te openen, uitgezocht **Creeer en beheer Beleid**. Als u nog geen aanmeldingsgegevens hebt opgegeven, wordt de browser geopend op de aanmeldingspagina van de server.
 
-### Beleid {#changing-policies} wijzigen
+### Beleid wijzigen {#changing-policies}
 
 Als u machtigingen hebt, meestal als documentbeveiligingsbeheerder of de uitgever van het bestand, kunt u later een ander beleid toepassen op een bestand of de instellingen wijzigen van het beleid dat momenteel wordt toegepast.
 
@@ -491,7 +490,7 @@ Als u de instellingen voor een beleid wilt wijzigen, gebruikt u de webpagina&#39
 
 1. Selecteer een beleid in de lijst en klik op **Toepassen**.
 
-### Bevoegdheden voor bestandstoegang {#revoking-file-access-privileges} intrekken
+### Toegangsrechten voor bestanden intrekken {#revoking-file-access-privileges}
 
 U kunt de mogelijkheid intrekken om bestanden te openen die u hebt beveiligd. Wanneer u toegangsrechten voor een bestand intrekt, kunt u ook het bericht opgeven dat verschijnt voor iedereen die het bestand probeert te openen en de URL naar een bijgewerkte versie van het bestand als u het bestand vervangt door een gereviseerde kopie.
 
@@ -507,7 +506,7 @@ Zie [Eindgebruiker van documentbeveiliging Help](http://help.adobe.com/en_US/AEM
 
 Toegangsrechten kunnen opnieuw worden ingesteld via de webpagina&#39;s voor documentbeveiliging.
 
-### De auditgeschiedenis van bestanden bekijken {#viewing-the-file-audit-history}
+### De auditgeschiedenis van het bestand weergeven {#viewing-the-file-audit-history}
 
 Met Documentbeveiliging kunt u de auditgeschiedenis opslaan voor bestanden die met een beleid zijn beveiligd, zodat u de handelingen kunt controleren die gebruikers op uw bestanden uitvoeren.
 
@@ -531,13 +530,13 @@ De gecontroleerde gebeurtenissen voor Word, Excel, en de dossiers van PowerPoint
 
 **Beleid schakelen op** DocumentNew-beleid dat wordt toegepast op bestand van de webpagina&#39;s Documentbeveiliging
 
-### De auditgeschiedenis van een bestand {#view-the-audit-history-for-a-file} weergeven
+### De auditgeschiedenis van een bestand weergeven {#view-the-audit-history-for-a-file}
 
 Selecteer **Geschiedenis controleren** in Documentbeveiligingsextensie voor Microsoft Office 2010 en 2013 op het tabblad **Documentbeveiliging**.
 
 De Web-pagina&#39;s van de Veiligheid van het Document openen aan de pagina van Gebeurtenissen, die gecontroleerde gebeurtenissen voor het huidige dossier toont.
 
-### Microsoft Office beperkte functies {#microsoft-office-restricted-features}
+### Beperkte functies in Microsoft Office {#microsoft-office-restricted-features}
 
 Om uw intellectuele eigendom te beschermen, zijn sommige eigenschappen van Microsoft Office niet beschikbaar wanneer een beleid-beschermd dossier open is. De lijst met niet-beschikbare functies is afhankelijk van de machtigingen die aan de huidige gebruiker zijn verleend. Sommige functies zijn alleen niet beschikbaar voor een beveiligd bestand en andere zijn niet beschikbaar voor alle bestanden wanneer u zich in een beveiligde sessie bevindt. Over het algemeen bevindt u zich in een beveiligde sessie vanaf het moment dat u een met een beleid beveiligd bestand opent tot u de toepassing sluit of de sessie verloopt.
 
@@ -559,7 +558,7 @@ Veel veelvoorkomende functies kunnen tijdens een beveiligde sessie worden beperk
 
 Als een bestand is geopend dat met beleid is beveiligd en de gebruiker niet in staat stelt wijzigingen aan te brengen, zijn opdrachten die het bestand op een of andere manier wijzigen, niet beschikbaar. Alleen de opdrachten waarmee u nieuwe documenten opent of maakt en de voorkeuren van de toepassing wijzigt, zijn beschikbaar.
 
-#### Beperkingen {#word-2010-and-word-2013-restrictions} in Word 2010 en Word 2013
+#### Beperkingen in Word 2010 en Word 2013 {#word-2010-and-word-2013-restrictions}
 
 Als u een bestand opent dat met een beleid is beveiligd in Word, is het niet mogelijk om automatisch herstelgegevens op te slaan totdat u Word sluit en opnieuw start. Bovendien zijn de hieronder vermelde kenmerken beperkt in de beschreven situaties:
 
@@ -627,7 +626,7 @@ Als u een bestand opent dat met een beleid is beveiligd in Word, is het niet mog
 
 **Omtrek > Master document > Subdocument maken,** Subdocument invoegen is niet beschikbaar tijdens een beveiligde sessie.
 
-#### Beperkingen {#excel-2010-and-excel-2013-restrictions} in Excel 2010 en Excel 2013
+#### Beperkingen in Excel 2010 en Excel 2013 {#excel-2010-and-excel-2013-restrictions}
 
 De onderstaande functies zijn beperkt in de beschreven situaties:
 
@@ -713,7 +712,7 @@ De onderstaande functies zijn beperkt in de beschreven situaties:
 
 ***Opmerking **: Als u probeert een cel te wijzigen in een bestand dat met een beleid is beveiligd en waarvoor u geen machtigingen hebt om wijzigingen aan te brengen, wordt in Excel een onjuist waarschuwingsbericht weergegeven waarin wordt aangegeven dat u de beveiliging uit het bestand moet verwijderen met de opdracht Blad verwijderen. Het gebruiken van het Unprotect bevel van het Blad verwijdert geen beleidsbescherming uit het dossier.*
 
-#### Beperkingen {#powerpoint-2010-and-powerpoint-2013-restrictions} voor PowerPoint 2010 en PowerPoint 2013
+#### Beperkingen van PowerPoint 2010 en PowerPoint 2013 {#powerpoint-2010-and-powerpoint-2013-restrictions}
 
 De onderstaande functies zijn beperkt in de beschreven situaties:
 
@@ -770,8 +769,6 @@ U kunt externe verificatieproviders gebruiken met AEM Forms Document Security. M
 * Standaard uitgebreide verificatieworkflow met externe identiteitsproviders geconfigureerd op AEM Forms op JEE-server
 * Aangepaste uitgebreide verificatieworkflow met externe identiteitsproviders geconfigureerd op AEM Forms op JEE-server
 * Uitgebreide verificatie met behulp van aangepaste pagina voor SAML-verificatie
-
-Raadpleeg het [Extended Authentication Scenarios](http://blogs.adobe.com/livecycle/2011/12/extended-authentication-scenarios.html)-artikel voor gedetailleerde stappen om uitgebreide verificatieworkflows te configureren
 
 ## Verklarende woordenlijst {#glossary}
 

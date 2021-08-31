@@ -5,16 +5,15 @@ uuid: 9d7eb6bb-4780-4d82-8657-7c6c6d523af0
 content-type: reference
 topic-tags: installing
 discoiquuid: f1cdf344-efe4-4cb5-9fc3-47ee4ba5faf4
-translation-type: tm+mt
-source-git-commit: ac385c538cdd7d3bb4772b92ee7a94b003595f56
+exl-id: 88759737-d57f-4354-951e-ad9f62d0a872
+source-git-commit: 13c487b13acb0d65f02301c881bfade512428bcd
 workflow-type: tm+mt
-source-wordcount: '2796'
+source-wordcount: '2764'
 ht-degree: 0%
 
 ---
 
-
-# Installeren en AEM de Uitbreiding van de Veiligheid van het Document voor Microsoft Office{#installing-and-configuring-aem-document-security-extension-for-microsoft-office} vormen
+# Documentbeveiligingsextensie voor Microsoft Office installeren en configureren{#installing-and-configuring-aem-document-security-extension-for-microsoft-office}
 
 Dit document begeleidt u door het installeren en het vormen van de Uitbreiding van de Veiligheid van het Document van Adobe Experience Manager voor Microsoft Office.
 
@@ -24,7 +23,7 @@ Dit document bevat informatie over de volgende taken:
 * Het installatieprogramma vooraf configureren om te wijzen naar de invoegtoepassing LiveCycle Rights Management ES2 of hoger of Documentbeveiliging voor AEM 6.0 Forms of hoger.
 * De automatische toepassing van standaardbeleid configureren
 
-## Voordat u {#before-you-install} installeert
+## Voordat u gaat installeren {#before-you-install}
 
 Controleer voordat u Documentbeveiligingsextensie voor Microsoft Office installeert of:
 
@@ -45,13 +44,13 @@ Controleer voordat u Documentbeveiligingsextensie voor Microsoft Office installe
 
 Om ervoor te zorgen dat Office-toepassingen probleemloos starten op een computer waarop Documentbeveiligingsextensie is geïnstalleerd en McAfee VirusScan is ingeschakeld met On-Access Scan, schakelt u de optie Buffer Overflow Protection uit in de McAfee VirusScan-console.
 
-### Plug-ins van andere leveranciers {#uninstall-third-party-plug-ins} verwijderen
+### Plug-ins van derden verwijderen {#uninstall-third-party-plug-ins}
 
 AEM de Uitbreiding van de Veiligheid van het Document voor Microsoft Office steunt derde geen stop-ins voor de toepassingen van Microsoft Office. Aangezien deze extensie conflicten oplevert met insteekmodules van derden, moet u eventuele niet-Adobe-insteekmodules voor Microsoft Office verwijderen voordat u Documentbeveiliging voor Microsoft Office installeert. Adobe biedt geen ondersteuning voor Document Security voor Microsoft Office-toepassingen waarbij plug-ins van derden zijn geïnstalleerd.
 
 ## Systeemvereisten {#system-requirements}
 
-### Document Security Extension Client {#document-security-extension-client}
+### Extensie Documentbeveiliging {#document-security-extension-client}
 
 Controleer de volgende minimale configuraties waarop u Documentbeveiligingsextensie wilt installeren:
 
@@ -80,7 +79,7 @@ Afzonderlijke installatieprogramma&#39;s zijn beschikbaar voor 32-bits en 64-bit
 >
 >Dit document gebruikt het installatiedossier met 32 bits (DocumentSecurityExtensionforMicrosoftOffice.exe) om diverse bevelen en opties te verklaren. Als u versie met 64 bits van Microsoft Office gebruikt, gebruik het installatiedossier met 64 bits (DocumentSecurityExtensionforMicrosoftOffice64.exe) om verrichtingen uit te voeren die in dit document worden vermeld.
 
-### Installeren in stille modus {#install-in-silent-mode}
+### Installeren in de stille modus {#install-in-silent-mode}
 
 Gebruik een hulpprogramma voor het ophalen van bestanden, zoals WinZip, om `DocumentSecurityExtensionforMicrosoftOffice.exe` uit het installatiebestand te extraheren. Open de opdrachtprompt, ga naar de map die het instellingenbestand bevat en typ de volgende tekst:
 
@@ -104,15 +103,21 @@ In de volgende stappen wordt beschreven hoe u een MSI-bestand maakt en configure
 
 ### Vereisten voor het aanpassen van het installatieprogramma {#prerequisites-for-customizing-the-installer}
 
-Gebruik de Orca-database-editor om het installatieprogramma aan te passen. De volgende stappen beschrijven hoe te om een douaneMSI dossier tot stand te brengen door een exemplaar van het MSI installatiedossier te wijzigen gebruikend de Orca gegevensbestandredacteur. Orca is beschikbaar als deel van Vensters SDK voor de Server 2008 van Vensters en .NET Kader 3.5. Voor meer informatie over hoe te om de dossiers van de Installateur van Microsoft Windows® uit te geven die Orca gebruiken, zie [de Steun van Microsoft](http://support.microsoft.com/kb/255905/EN-US/).
+Gebruik de Orca-database-editor om het installatieprogramma aan te passen. De volgende stappen beschrijven hoe te om een douaneMSI dossier tot stand te brengen door een exemplaar van het MSI installatiedossier te wijzigen gebruikend de Orca gegevensbestandredacteur. Orca is beschikbaar als deel van Vensters SDK voor de Server 2008 van Vensters en .NET Kader 3.5.
+
+<!--
+
+For more information about how to edit Microsoft Windows® Installer files using Orca, see [Microsoft Support](http://support.microsoft.com/kb/255905/EN-US/).
+
+-->
 
 >[!NOTE]
 >
 >Het wordt aanbevolen een volledige back-up te maken van alle installatiebestanden voordat u het aangepaste MSI-bestand maakt.
 
-#### Orca {#install-orca} installeren
+#### Orca installeren {#install-orca}
 
-1. Download Windows SDK voor Windows Server 2008 en .NET Framework 3.5 van [Microsoft Download Center](http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=11310).
+1. Download Vensters SDK voor de Server 2008 van Vensters en .NET Kader 3.5.
 1. Dubbelklik op het bestand Orca.msi in de map \Microsoft SDK\bin.
 
    U hebt ook de MSI-variant van het installatiebestand nodig. Neem contact op met de Adobe-ondersteuning voor de nieuwste versie van het MSI-installatieprogramma.
@@ -121,7 +126,7 @@ Gebruik de Orca-database-editor om het installatieprogramma aan te passen. De vo
    >
    >Sluit altijd het bestand DocumentSecurityExtensionforMicrosoftOffice.msi voordat u het installatieprogramma uitvoert. U kunt het installatieprogramma niet uitvoeren als Orca het MSI-bestand gebruikt.
 
-### Het MSI-bestand {#create-and-configure-the-msi-file} maken en configureren
+### Het MSI-bestand maken en configureren {#create-and-configure-the-msi-file}
 
 1. Klik **[!UICONTROL Start > Programma&#39;s > Orca]**.
 
@@ -237,7 +242,7 @@ Voordat u begint, configureert u het installatieprogramma zo dat het naar de Liv
    >
    >Vaak wordt dezelfde bestandsnaam gebruikt als het oorspronkelijke MSI-bestand (bijvoorbeeld `DocumentSecurityExtensionforMicrosoftOffice.msi`).
 
-## Automatische bescherming van nieuwe documenten inschakelen {#enabling-automatic-protection-of-new-documents}
+## Automatische bescherming van nieuwe documenten mogelijk maken {#enabling-automatic-protection-of-new-documents}
 
 De beheerder kan de mogelijkheid inschakelen om elk document dat een gebruiker opslaat, automatisch te beveiligen. De beheerder vormt automatisch-past beleidseigenschap in het installatieprogramma voor de Uitbreiding van de Veiligheid van het Document voor Microsoft Office toe.
 
@@ -248,7 +253,7 @@ Als Beleid automatisch toepassen is ingeschakeld, worden alle documenten die de 
 
 Voor informatie over het vormen Auto-apply beleid, zie [Vorm een automatische toepassing van standaardbeleid](installing-configuring-aemdsext.md#p-configuring-automatic-application-of-a-default-policy-p).
 
-## Gebruikersinterface zonder lint {#enable-ribbon-less-user-interface} inschakelen
+## Gebruikersinterface zonder lint inschakelen {#enable-ribbon-less-user-interface}
 
 U kunt de gebruikersinterface zonder lint toelaten/onbruikbaar maken door montages in de Registratie van Vensters te wijzigen. Voer de volgende stappen uit om Registratie bij te werken en lint minder gebruikersinterface toe te laten:
 
@@ -279,7 +284,7 @@ U kunt de registratiemontages van Vensters veranderen om dynamisch watermerk sam
 
 Een gebruiker kan proberen het beveiligde document te openen op een computer waarop geen AEM insteekmodule Documentbeveiliging voor Microsoft Office is geïnstalleerd. Dergelijke machines kunnen het document niet openen. Op dergelijke computers kunt u een omslagpagina weergeven met instructies voor het downloaden AEM Document Security voor de insteekmodule Microsoft Office en andere informatie.
 
-### Voordat u een omslagpagina {#before-you-configure-a-cover-page} configureert
+### Voordat u een omslagpagina configureert {#before-you-configure-a-cover-page}
 
 * Maak een back-up van het bestand CommonResources.dll. Het standaardpad is:
 
@@ -331,7 +336,7 @@ Het bestand CommonResources.dll bevat informatie over de bronnensjablonen. Deze 
  </tbody>
 </table>
 
-#### De sjabloon configureren als omslagpagina {#configure-the-template-as-a-cover-page}
+#### De sjabloon configureren als een omslagpagina {#configure-the-template-as-a-cover-page}
 
 1. Open Microsoft Visual Studio. Blader naar het bestand CommonResources.dll en open het om het te bewerken.
 
@@ -358,7 +363,7 @@ Het bestand CommonResources.dll bevat informatie over de bronnensjablonen. Deze 
    >
    >Verwijder en voeg geen middeltypes in willekeurige orde toe. Na 101, vorm 102, etc.
 
-### Het aangepaste CommonResources.dll-bestand verpakken met het installatieprogramma van AEM Document Security-extensie voor Microsoft Office {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
+### Het aangepaste CommonResources.dll-bestand verpakken met het installatieprogramma van AEM Document Security-extensie voor Microsoft Office  {#package-custom-commonresources-dll-file-with-the-installer-of-aem-document-security-extension-for-microsoft-office}
 
 U kunt het bestand CommonResources.dll aanpassen en een aangepaste omslagpagina toevoegen. Nadat u het bestand hebt aangepast, kunt u het originele bestand handmatig vervangen door het aangepaste bestand op alle werkstations. U kunt ook een geautomatiseerde methode kiezen om het bestand te vervangen.
 
