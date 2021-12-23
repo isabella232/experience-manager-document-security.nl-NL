@@ -1,57 +1,61 @@
 ---
-source-git-commit: 19de0b62ac493c7507581abb607b008c64f77597
+source-git-commit: 3687bd5e276bd3445d12fb19d911f6a9ded1077d
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '296'
-ht-degree: 21%
+source-wordcount: '538'
+ht-degree: 2%
 
 ---
-# Bijdragen
+# Bijdragen aan AEM Document Security Extension voor Microsoft Office-documentatie
 
-Bedankt dat u hebt gekozen om bij te dragen!
+Bedankt dat u hebt gekozen om bij te dragen aan AEM Document Security Extension for Microsoft Office-documentatie. Wij zijn blij met de bijdragen van onze gehele lezergemeenschap en van collega-Adobe-medewerkers.
 
-Hieronder volgt een reeks richtlijnen die moeten worden gevolgd wanneer u een bijdrage levert aan dit project.
+In dit bestand wordt beschreven hoe u een bijdrage kunt leveren en worden de richtlijnen beschreven die u moet volgen bij het maken van uw bijdragen.
 
-## Gedragscode
+## Adobe Open-Source-gedragscode
 
-Dit project voldoet aan de Adobe-[gedragscode](code-of-conduct.md). Als u deelneemt, wordt van u verwacht dat u zich aan deze code houdt. Geef een onacceptabel gedrag aan
-[Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+Dit project heeft het [Adobe Open-Source-gedragscode](code-of-conduct.md). Door bij te dragen aan AEM documentatie gaat u akkoord met het naleven van deze gedragscode. Geef een onacceptabel gedrag aan [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Documentatie voor de bijdragegids
+## Richtsnoeren voor de bijdrage
 
-Zie de [Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Wij zijn blij met alle bijdragen aan de verbetering van AEM documentatie, maar wij vragen wel dat de bijdragen waar mogelijk aan bepaalde richtsnoeren en normen voldoen. Controleer de [Richtsnoeren voor het bijdragen aan AEM documentatie](guidelines.md) voor meer informatie .
 
-## Heb je een vraag?
+## Contribute
 
-Begin met het indienen van een probleem. De bestaande commissies voor dit project werken eraan
-consensus over de richting van projecten en het uitwerken van oplossingen binnen de verschillende onderwerpen
-(indien van toepassing).
+We willen het zo eenvoudig mogelijk maken om uw bijdragen in te dienen. U kunt op twee manieren bijdragen:
 
-## Licentieovereenkomst voor contribuant
+* [Een uitgave maken](#create-an-issue)
+* [Een pull-verzoek maken](#create-a-pull-request)
 
-Alle bijdragen van derden aan dit project moeten vergezeld gaan van een ondertekende contribuant
-licentieovereenkomst. Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. [Onderteken onze CLA](http://opensource.adobe.com/cla.html). U
-slechts één keer een Adobe CLA moet voorleggen, zodat als u eerder hebt voorgelegd,
-je bent klaar om te gaan !
+Welke methode u kiest hangt van af hoe comfortabel u de documentatie in GitHub zelf uitgeeft.
 
-## Codebeoordelingen
+>[!NOTE]
+>
+>Bijdragen die u indient, worden gedekt door de [Adobe gebruiksvoorwaarden.](https://www.adobe.com/legal/terms.html)
 
-Alle inzendingen moeten in de vorm van pull-aanvragen gebeuren en moeten door projectcommitters worden gecontroleerd. Lees de documentatie [over pull-aanvragen van GitHub](https://help.github.com/articles/about-pull-requests/) voor meer informatie over het indienen van pull-aanvragen.
+### Een probleem maken {#create-an-issue}
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Heeft u een suggestie, een observatie over de huidige documenten of vraagt u zich af hoe iets wordt beschreven? Maak vervolgens een probleem. De kwesties zijn ook uitstekend als u iets hebt om bij te dragen, maar voel niet comfortabel het uitgeven van de docs of het maken van een trekpleidooi zelf.
 
-## Van contribuant aan vastleggingen
+De kwesties staan u toe om uw idee voor verbetering aan de documenten gemakkelijk te beschrijven en een lid van het Team van AEM Docs kan het herzien. Klik gewoon op de knop **Een probleem aanmelden** Klik boven aan het rechternavigatievenster op een pagina om een uitgave te maken.
 
-We houden van bijdragen van onze gemeenschap! Als u een stap verder wilt gaan dan contribuant
-en wordt een commissie met volledige schrijftoegang en een inspraak in het project, moet u
-worden uitgenodigd voor het project. De bestaande comités hanteren een interne voordracht
-proces dat een luie consensus moet bereiken (stilte is goedkeuring) vóór uitnodigingen
-worden afgegeven. Als u zich gekwalificeerd voelt en meer betrokken wilt worden,
-het is vrij om contact op te nemen met bestaande toezeggingen om hierover te praten .
+### Een volledige aanvraag maken {#create-a-pull-request}
 
-## Beveiligingsproblemen
+Als u een probleem ziet en precies weet hoe u dit kunt verhelpen, kunt u een pull-verzoek maken. De verzoeken van de Trek staan u toe om uw eigen uit te geven aan de documentatie, die dan voor opneming door een lid van het Team van AEM Docs wordt herzien. Klik gewoon op de knop **Deze pagina bewerken** Klik boven aan het rechternavigatievenster op een pagina om de voorgestelde wijzigingen aan te brengen en de pull-aanvraag te maken.
 
-Beveiligingsproblemen moeten niet worden gerapporteerd in deze Issue Tracker. [dient in plaats daarvan een probleem in bij onze beveiligingsexperts](https://helpx.adobe.com/security/alertus.html)
+Alle intrekkingsverzoeken moeten vergezeld gaan van een ondertekend [overeenkomst inzake contribuanten of CLA.](https://opensource.adobe.com/cla.html)  Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. U hoeft slechts één keer een Adobe CLA in te dienen, dus als u eerder een CLA hebt verzonden, kunt u het beste gaan!
+
+### Snelle video-introductie
+
+Bekijk de volgende video voor een snel overzicht van hoe u problemen kunt maken en aanvragen kunt intrekken.
+
+>[!VIDEO](https://video.tv.adobe.com/v/27069)
+
+### Bijdragen van Adobe werknemers
+
+Als u een medewerker van de Adobe bent en een bijdrage hebt, gelieve te gebruiken `AdobeDocs` org in het bedrijfsgat.
+
+Uiteraard zijn wij blij met elke bijdrage en zullen wij uw bijdrage herzien als deze via de openbare gegevensopslagruimte wordt geleverd. Het is echter gemakkelijker om verzoeken van Adobe-werknemers te verwerken en sneller in de bedrijfsrapportages te kunnen worden goedgekeurd. Zorg ervoor dat de bedrijfseigen informatie alleen wordt besproken in het bedrijfsantwoord.
+
+## Aanvullende informatie
+
+Zie de [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor verdere details op hoe te om het GitHub auteursplatform te gebruiken.
